@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build FLTK App",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "virtual_memory_sim.cpp",
+                "-o",
+                "virtual_memory_sim",
+                "-lfltk",
+                "-lX11",
+                "-lm",
+                "-lXext",
+                "-lXft",
+                "-lXcursor"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Build the FLTK Virtual Memory Simulator"
+        },
+        {
+            "label": "Run FLTK App",
+            "type": "shell",
+            "command": "./virtual_memory_sim",
+            "dependsOn": "Build FLTK App",
+            "group": "none"
+        }
+    ]
+}
