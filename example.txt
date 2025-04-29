@@ -1,0 +1,59 @@
+Frame Size: 3
+Page Sequence: 1 2 3 2 4 1 5
+Page 1 added (Fault)
+Page 2 added (Fault)
+Page 3 added (Fault)
+Page 2 hit
+Page 1 removed
+Page 4 added (Fault)
+Page 2 removed
+Page 1 added (Fault)
+Page 3 removed
+Page 5 added (Fault)
+Total Page Faults: 6
+
+comparison between fifo  and lru
+
+Frame Size: 4
+
+Page Sequence: 1 2 3 4 1 2 5 1 2 3 4 5
+
+lru
+Page 1 added (Fault)
+Page 2 added (Fault)
+Page 3 added (Fault)
+Page 4 added (Fault)
+Page 1 hit
+Page 2 hit
+Page 3 removed
+Page 5 added (Fault)
+Page 1 hit
+Page 2 hit
+Page 4 removed
+Page 3 added (Fault)
+Page 5 removed
+Page 4 added (Fault)
+Page 1 removed
+Page 5 added (Fault)
+Total Page Faults: 8
+
+fifo
+Page 1 added (Fault)
+Page 2 added (Fault)
+Page 3 added (Fault)
+Page 4 added (Fault)
+Page 1 hit
+Page 2 hit
+Page 1 removed
+Page 5 added (Fault)
+Page 2 removed
+Page 1 added (Fault)
+Page 3 removed
+Page 2 added (Fault)
+Page 4 removed
+Page 3 added (Fault)
+Page 5 removed
+Page 4 added (Fault)
+Page 1 removed
+Page 5 added (Fault)
+Total Page Faults: 10
